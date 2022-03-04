@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="sneaker.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Xeryus: Buy & Sell Shoes</title>
+  <script>
+    // DOM ready
+    $(function () {
+
+      // Create the dropdown base
+      $("<select />").appendTo(".nav");
+
+      // Create default option "Go to..."
+      $("<option />", {
+        "selected": "selected",
+        "value": "",
+        "text": "Go to..."
+      }).appendTo(".nav select");
+
+      // Populate dropdown with menu items
+      $(".nav a").each(function () {
+        var el = $(this);
+        $("<option />", {
+          "value": el.attr("href"),
+          "text": el.text()
+        }).appendTo(".nav select");
+      });
+
+      // To make dropdown actually work
+      // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $(".nav select").change(function () {
+        window.location = $(this).find("option:selected").val();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand d-fx justify-content-center" href="/index.html"><img src="/image/logo/XERYUSLG.png"
+          alt="Xeryus" width="100px" height="50px"></a>
+    </div>
+    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+      <div class="control">
+        <form class="form-inline ">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><img src="/image/icons/search.png" width="20px"
+                  height="20px" alt="Search"></span>
+            </div>
+            <input type="text" style="width: 400px;" class="form-control" placeholder="Search" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="menu">
+      <ul id="navbarSupportedContent" class=" navbar-collapse collapse navbar-nav mr-auto navbar-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Browse
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="sneaker.html">Sneakers</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/signup.html">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container" style="top: 0;margin-top:77px;">
+    <div>
+      <img id="paner" src="image/about.jpg" alt="">
+    </div>
+    <div class="row">
+      <div class=" col-md-12 col-xs-12 col-sm-12 col-lg-2 col-xl-2">
+        <div>
+          <nav class="nav flex-column">
+            <a class="nav-link " href="/sneaker.html">SNEAKERS</a>
+            <a class="nav-link" href="/retro-jordans.html">AIR JORDAN</a>
+            <a class="nav-link" href="/adidas.html">ADIDAS</a>
+            <a class="nav-link disabled" href="/nike.html">NIKE</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class=" col-xs-12 col-md-12 col-sm-12 col-xl-10 col-lg-10">
+        <div class="library ">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ">
+              <li class="breadcrumb-item"><a style="text-decoration: none;" href="/index.html">Home</a></li>
+              <li class="breadcrumb-item"><a style="text-decoration: none;" href="/sneaker.html">Sneakers</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Nike</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="sanpham">
+          <div class="content" style="width: 22%;">
+            <a href="/air-jordan-1-mid-chicago-toe.html">
+              <div>
+                <img src="/image/nk/nkam2lightatmos/img01.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="title">Nike Air Max 2 Light Atmos</div>
+                <div class="money">78$</div>
+              </div>
+            </a>
+          </div>
+          <div class="content" style="width: 22%;">
+            <a href="/air-jordan-1-mid-chicago-toe.html">
+              <div>
+                <img src="/image/nk/nkaf1lsupremewhite/img01.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="title">Nike Air Force 1 Low Supreme White</div>
+                <div class="money">205$</div>
+              </div>
+            </a>
+          </div>
+          <div class="content" style="width: 22%;">
+            <a href="/air-jordan-1-mid-chicago-toe.html">
+              <div>
+                <img src="/image/nk/nkam97offwhite/img01.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="title">Nike Air Max 97 Off-White</div>
+                <div class="money">1,115$</div>
+              </div>
+            </a>
+          </div>
+          <div class="content" style="width: 22%;">
+            <a href="/air-jordan-1-mid-chicago-toe.html">
+              <div>
+                <img src="/image/nk/nkaf1ldayofthedead2019/img01.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="title">Nike Air Force 1 Low Day of the Dead (2019)</div>
+                <div class="money">200$</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="page" aria-label="Page navigation example">
+      <ul class="pagination pagination-sm pagination-md pagination-xs pagination-lg pagination-xl justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1"><</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-6">
+          <ul class="list">
+            <li ><a class="brand"href="/retro-jordans.html">Air Jordan</a></li>
+            <li ><a class="type" href="/retro-jordans/women">Air Jordan Women</a></li>
+            <li ><a class="type" href="/retro-jordans/kids">Air Jordan Kids</a></li>
+            <li ><a class="type" href="/retro-jordans/air-jordan-1/women">Air Jordan 1 Women</a></li>
+            <li ><a class="type" href="/retro-jordans/air-jordan-1/low">Air Jordan 1 Low</a></li>
+            <li ><a class="type" href="/retro-jordans/jordan-off-white">Air Jordan Off-White</a></li>
+            <li ><a class="type" href="/retro-jordans/air-jordan-1/High">Air Jordan 1 High</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-6">
+          <ul class="list">
+            <li ><a class="brand"href="/adidas.html">Adidas</a></li>
+            <li ><a class="type" href="/adidas/yeezy/350">Adidas Yeezy Boost 350</a></li>
+            <li ><a class="type" href="/adidas/yeezy/500">Adidas Yeezy Boost 500</a></li>
+            <li ><a class="type" href="/adidas/yeezy/700">Adidas Yeezy Boost 700</a></li>
+            <li ><a class="type" href="/adidas/yeezy/380">Adidas Yeezy Boost 380</a></li>
+            <li ><a class="type" href="/adidas/yeezy/qntm">Adidas Yeezy QNTM</a></li>
+            <li ><a class="type" href="/adidas/nmd">Adidas NMD</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-6">
+          <ul class="list">
+            <li ><a class="brand"href="/nike.html">Nike</a></li>
+            <li ><a class="type" href="/nike/foamposite">Nike Foamposite</a></li>
+            <li ><a class="type" href="/nike/kd">Nike KD</a></li>
+            <li ><a class="type" href="/nike/kobe">Nike Kobe</a></li>
+            <li ><a class="type" href="/nike/lebron">Nike Lebron</a></li>
+            <li ><a class="type" href="/nike/air-force">Nike Air Force</a></li>
+            <li ><a class="type" href="/nike/air-max">Nike Air Max</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-6">
+          <ul class="list">
+            <li ><a class="brand"href="/introduced">Introduced</a></li>
+            <li ><a class="type" href="/introduced-branch">Branch</a></li>
+            <li ><a class="type" href="/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div class="call">
+        <a href="facebook.com/nhk.khai" class="fa fa-facebook"></a>
+        <a href="instagram.com/nhk.khaii_" class="fa fa-instagram"></a>
+        <div><span id="xeryus">&copy2020 Xeryus. All Rights Reserved.</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

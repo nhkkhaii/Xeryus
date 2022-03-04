@@ -1,0 +1,87 @@
+.custom-range{
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.btn-buy{
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid grey;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.navbar{
+border-bottom: 1px solid gray;
+}
+.navbar-collapse{
+align-items: initial !important;
+}
+.made{
+  font-weight: bold;
+  opacity: 0.6;
+}
+.breadcrumb-item a{
+  color: black;
+  opacity: 0.6;
+}
+.breadcrumb{
+  font-size: 10px;
+}
+.info{
+  margin-left: auto;
+  margin-top: 40px;
+}
+.info .title{
+font-size: 20px;
+text-transform: uppercase;
+}
+@media (max-width :992px){
+.navbar-brand{
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+bottom: 0;
+margin-bottom: 5px;
+}
+.form-inline{
+margin-top: 7px;
+}
+.info .title{
+font-size: 15px;
+}
+}
+@media (max-width: 768px){
+.display-4{
+  font-size: 35px;
+}
+.info{
+ display :none;
+}
+
+}
+@media (max-width: 576px){
+.form-control{
+width: 50px !important;
+}   
+.display-4{
+  font-size: 25px;
+}
+.breadcrumb{
+  font-size: 8px;
+}
+.made{
+  font-size: 10px;
+}
+}
+#myImage{
+width: 100%;
+}
+.btn{
+  width: 150px;
+  font-size: 30px !important;
+}

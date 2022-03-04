@@ -1,0 +1,34 @@
+.navbar{
+    border-bottom: 1px solid gray;
+  }
+  .navbar-collapse{
+    align-items: initial !important;
+  }
+  @media (max-width: 576px){
+    .form-control{
+      width: 50px !important;
+    }   
+  }
+  @media (max-width :992px){
+    .navbar-brand{
+      position: absolute;
+      top: 0;
+      left: 50%;
+        
+      bottom: 0;
+      margin-bottom: 5px;
+    }
+    .form-inline{
+      margin-top: 7px;
+    }
+}
+.form-control{
+    width: 100%;
+  }
+  .nav-link{
+    font-weight: bolder;
+    color: black;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; }

@@ -1,0 +1,74 @@
+.list{
+    list-style: none;
+    margin-top: 12px;
+  }
+  
+  .brand{
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
+  .list a.brand:hover{
+    color: white;
+  }
+  .list li{
+    margin-top: 5px;
+  }
+  .list a.type:hover{
+    color: rgb(125, 133, 250);
+  }
+  .type{
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+    color: gray;
+  }
+  .list a{
+    text-decoration: none !important;
+  }
+  .call{
+    text-align: center;
+    border-top: 1px solid gray;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    color: white;
+    opacity: 0.7;
+  }
+  #xeryus{
+    font-size: 15px;
+    color: rgb(160, 160, 160);
+  }
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background:transparent;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: transparent;
+    color: white;
+  }
+  @media (max-width: 576px){
+    .brand{
+        font-size: 15px !important;
+      }
+      .type{
+        font-size: 12px !important;
+      }
+      #xeryus{
+        font-size: 10px !important;
+      }
+  }
